@@ -2,7 +2,7 @@ module xor_verilog_test(op,a,b);
 output wire op;
 input wire a,b;
 
-xor_gate xor_gate(
+dut dut(
 	.a(a),
 	.b(b),
 	.op(op)
