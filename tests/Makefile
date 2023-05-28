@@ -3,5 +3,5 @@ TOPLEVEL_LANG ?= verilog
 VERILOG_SOURCES +=$(PWD)/hdl/dut.v
 
 xor:
-	$(MAKE) sim MODULE=dut TOPLEVEL=dut_test
+	$(MAKE) sim MODULE=dut_test TOPLEVEL=dut
 include $(shell cocotb-config --makefiles)/Makefile.sim
